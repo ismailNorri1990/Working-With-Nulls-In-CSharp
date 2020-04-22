@@ -21,7 +21,6 @@ namespace GameConsole
                 Console.WriteLine(playerCharacter.DaySinceLastLogin);
             }
 
-
            if (playerCharacter.DateOfBirth == null)
             {
                 Console.WriteLine("No value for Birthday");
@@ -43,7 +42,6 @@ namespace GameConsole
             {
                 Console.WriteLine("Player is experienced");
             }
-
         }
             
     }
