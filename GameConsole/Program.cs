@@ -13,7 +13,7 @@ namespace GameConsole
             var player = new PlayerCharacter();
             
             
-            player.Name = "Sarah";
+            player.Name = "";
             player.DaySinceLastLogin = 42;
 
             //Displaying the result of the Write function
