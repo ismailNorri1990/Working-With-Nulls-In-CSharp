@@ -12,7 +12,7 @@ namespace GameConsole
         {
             Console.WriteLine(playerCharacter.Name);
 
-            if(playerCharacter.DaySinceLastLogin == -1)
+            if(playerCharacter.DaySinceLastLogin == null)
             {
                 Console.WriteLine("No value for Day SinceLastLogin");
             }
@@ -22,13 +22,26 @@ namespace GameConsole
             }
 
 
-           if (playerCharacter.DateOfBirth == DateTime.MinValue)
+           if (playerCharacter.DateOfBirth == null)
             {
                 Console.WriteLine("No value for Birthday");
             }
             else
             {
                 Console.WriteLine(playerCharacter.DateOfBirth);
+            }
+
+            if (playerCharacter.IsNoob == null)
+            {
+                Console.WriteLine("The player newbie status is unknown");
+            }
+            else if(playerCharacter.IsNoob == true)
+            {
+                Console.WriteLine("Player is newbie");
+            }
+            else
+            {
+                Console.WriteLine("Player is experienced");
             }
 
         }
