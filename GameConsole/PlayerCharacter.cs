@@ -8,14 +8,9 @@ namespace GameConsole
 {
     class PlayerCharacter
     {
-        public PlayerCharacter()
-        {
-            DateOfBirth = DateTime.MinValue; //Magic Number
-            DaySinceLastLogin = -1; //Magic Number
-        }
-
         public string Name { get; set; }
-        public int DaySinceLastLogin { get; set; }
-        public DateTime DateOfBirth { get; set; }
+        public int? DaySinceLastLogin { get; set; }
+        public DateTime? DateOfBirth { get; set; }
+        public bool? IsNoob { get; set; }
     }
 }
