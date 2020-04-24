@@ -10,16 +10,21 @@ namespace GameConsole
     {
         static void Main(string[] args)
         {
-            var player = new PlayerCharacter();
+            var player = new PlayerCharacter[] { 
+                new PlayerCharacter(){ Name = "Issam"},
+                new PlayerCharacter(){ Name = null},
+                null
+            };
+
+
+            var p1 = player?[0]?.Name;
+            var p2 = player?[1]?.Name;
+            var p3 = player?[2]?.Name;
+
+            Console.WriteLine(p1 +" "+ p2 + " "+ p3);
             
-            
-            player.Name = "";
-           player.DaySinceLastLogin = 42;
 
-            //Displaying the result of the Write function
-
-            PlayerDisplayer.Write(player);
-
+           
             Console.ReadLine() ;
         }
     }
