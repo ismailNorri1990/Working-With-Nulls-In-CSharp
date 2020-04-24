@@ -33,6 +33,10 @@ namespace GameConsole
             int daysCoales = playerCharacter.DaySinceLastLogin ?? -1;
             Console.WriteLine($"{daysCoales} days since last Login");
 
+            //Null Conditional Operator (C# 6)
+            int daysNulCondOp = playerCharacter?.DaySinceLastLogin ?? -1;
+            Console.WriteLine($"{daysNulCondOp} days since last Login");
+
 
             //Has Value return a bool - Know that the value exist or not
 
