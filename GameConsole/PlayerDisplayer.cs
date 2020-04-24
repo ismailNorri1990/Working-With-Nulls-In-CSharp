@@ -28,6 +28,12 @@ namespace GameConsole
             int daysCond = playerCharacter.DaySinceLastLogin.HasValue ? playerCharacter.DaySinceLastLogin.Value : -1;
             Console.WriteLine($"{daysCond} days since last Login");
 
+
+            //Null Coalescing Operator (Use the object itself and ?? and default value
+            int daysCoales = playerCharacter.DaySinceLastLogin ?? -1;
+            Console.WriteLine($"{daysCoales} days since last Login");
+
+
             //Has Value return a bool - Know that the value exist or not
 
             if (playerCharacter.DaySinceLastLogin.HasValue)
