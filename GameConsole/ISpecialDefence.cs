@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GameConsole
 {
-    public interface ISpecialDefence
+    public abstract class SpecialDefence
     {
-        int CalculateDamageReduction(int totalDamage);
+        public abstract int CalculateDamageReduction(int totalDamage);
     }
 }
