@@ -23,6 +23,11 @@ namespace GameConsole
             int days = playerCharacter.DaySinceLastLogin.GetValueOrDefault(-1);
             Console.WriteLine($"{days} days since last Login");
 
+
+            //Conditonal Operator
+            int daysCond = playerCharacter.DaySinceLastLogin.HasValue ? playerCharacter.DaySinceLastLogin.Value : -1;
+            Console.WriteLine($"{daysCond} days since last Login");
+
             //Has Value return a bool - Know that the value exist or not
 
             if (playerCharacter.DaySinceLastLogin.HasValue)
