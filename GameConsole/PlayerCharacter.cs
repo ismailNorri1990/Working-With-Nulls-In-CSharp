@@ -15,6 +15,7 @@ namespace GameConsole
             _specialDefence = specialDefence;
         }
 
+        
 
         public string Name { get; set; }
 

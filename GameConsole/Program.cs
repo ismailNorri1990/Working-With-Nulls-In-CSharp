@@ -15,12 +15,12 @@ namespace GameConsole
                 Name = "Ismail"
             };
 
-            PlayerCharacter badr = new PlayerCharacter(new IronBonesDefence())
+            PlayerCharacter badr = new PlayerCharacter(SpecialDefence.Null)
             {
                 Name = "badr"
             };
 
-            PlayerCharacter gentry = new PlayerCharacter(new NullDefence())
+            PlayerCharacter gentry = new PlayerCharacter(SpecialDefence.Null)
             {
                 Name = "gentry"
             };
